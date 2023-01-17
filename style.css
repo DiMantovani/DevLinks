@@ -10,7 +10,7 @@
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg);  
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 .light {
   --text-color: black;
@@ -32,29 +32,26 @@ body {
 
   /*background: color image repeat position/size*/
   /*Atalho para todas propriedades*/
-  background: 
-    var(--bg-url)     
-    no-repeat 
-    top 
-    center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
 #container {
-  width: 360px; /*Largura*/    
-  margin: auto;
-  margin-top: 56px;
+  width: 100%; /*Largura*/
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #profile {
   text-align: center;
-  padding: 24px;  
+  padding: 24px;
 }
 #profile img {
-  width: 112px;  
+  width: 112px;
 }
 #profile p {
   font-weight: 500;
@@ -62,10 +59,10 @@ body * {
   margin-top: 8px;
 }
 
-#switch {  
+#switch {
   position: relative;
   width: 64px;
-  
+
   margin: 4px auto;
 }
 
@@ -74,7 +71,7 @@ body * {
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
-  border-radius: 50%;  
+  border-radius: 50%;
 
   position: absolute;
   top: 50%;
@@ -111,7 +108,7 @@ ul {
 
   padding: 24px 0;
 }
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,13 +135,12 @@ ul li a:hover {
 #social-links {
   display: flex; /*Colocando para poder usar o gap*/
   justify-content: center;
-  
 
   padding: 24px 0px;
 
   font-size: 24px;
 }
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,9 +149,9 @@ ul li a:hover {
   transition: background 0.2s;
   border-radius: 50%;
 }
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
-  padding: 16px;  
+  padding: 16px;
 }
 
 footer {
